@@ -1,0 +1,40 @@
+<div class="login-container">
+  <div class="login-card">
+    <h2>Login to Tweet Purge</h2>
+    <div
+      id="g_id_onload"
+      data-client_id="853545486335-u415q4bs1leg9d990s8r7h508gor8lvo.apps.googleusercontent.com"
+      data-context="signin"
+      data-ux_mode="popup"
+      data-login_uri="http://localhost:4200/"
+      data-auto_prompt="false"
+    ></div>
+
+    <div
+      class="g_id_signin"
+      data-type="standard"
+      data-shape="rectangular"
+      data-theme="outline"
+      data-text="signin_with"
+      data-size="large"
+      data-locale="en"
+      data-logo_alignment="left"
+    ></div>
+
+    <div class="or-divider">
+      <span>or</span>
+    </div>
+
+    <div class="twitter-login-form">
+      <input type="text" placeholder="Username" [(ngModel)]="twitterUsername" />
+      <input
+        type="password"
+        placeholder="Password"
+        [(ngModel)]="twitterPassword"
+      />
+      <button class="twitter-login-button" (click)="signInWithTwitter()">
+        Login with Twitter
+      </button>
+    </div>
+  </div>
+</div>
