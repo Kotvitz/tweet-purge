@@ -38,11 +38,11 @@ h2 {
   background-color: #0d86c1;
 }
 
-.or-divider {
+.login-info {
   margin: 20px 0;
 }
 
-.or-divider span {
+.login-info span {
   background-color: #fff;
   padding: 0 10px;
   color: #999;
@@ -60,8 +60,4 @@ h2 {
   margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
-}
-
-.g_id_signin {
-  display: inline-flex;
 }
