@@ -5,34 +5,34 @@
     <form>
       <div class="form-group">
         <label for="allWords">All these words:</label>
-        <input type="text" id="allWords" />
+        <input type="text" id="allWords" name="allWords" [(ngModel)]="allWords">
       </div>
 
       <div class="form-group">
         <label for="exactPhrase">This exact word or phrase:</label>
-        <input type="text" id="exactPhrase" />
+        <input type="text" id="exactPhrase" name="exactPhrase" [(ngModel)]="exactPhrase">
       </div>
 
       <div class="form-group">
         <label for="anyWords">Any of these words:</label>
-        <input type="text" id="anyWords" />
+        <input type="text" id="anyWords" name="anyWords" [(ngModel)]="anyWords">
       </div>
 
       <div class="form-group">
         <label for="noneWords">None of these words:</label>
-        <input type="text" id="noneWords" />
+        <input type="text" id="noneWords" name="noneWords" [(ngModel)]="noneWords">
       </div>
 
       <div class="form-group">
         <label for="dateRange">This date range:</label>
-        <input type="date" id="dateRangeStart" />
+        <input type="date" id="dateRangeStart" name="dateRangeStart" [(ngModel)]="dateRangeStart">
         <span>to</span>
-        <input type="date" id="dateRangeEnd" />
+        <input type="date" id="dateRangeEnd" name="dateRangeEnd" [(ngModel)]="dateRangeEnd">
       </div>
 
       <div class="form-buttons">
         <button class="search-button">Search</button>
-        <button class="clear-button">Clear filters</button>
+        <button class="clear-button" (click)="clearFilters()">Clear filters</button>
       </div>
     </form>
   </div>
