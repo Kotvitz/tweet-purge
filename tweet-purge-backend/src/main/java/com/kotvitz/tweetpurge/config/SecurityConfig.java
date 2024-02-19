@@ -47,8 +47,8 @@ public class SecurityConfig {
 	ClientRegistrationRepository clientRegistrationRepository() {
 		return new InMemoryClientRegistrationRepository(
 			ClientRegistration.withRegistrationId("twitter")
-				.clientId("NG1MMnFmejJObDJ5ZUlsMGJrYlo6MTpjaQ")
-				.clientSecret("0JK2xgXXfrEkyTMdLzfDswz_8U0EYd7mZSFbLkdthwDGii5mdK")
+				.clientId(System.getenv("CLIENT_ID"))
+				.clientSecret(System.getenv("CLIENT_SECRET"))
 				.authorizationUri("https://api.twitter.com/oauth/authenticate")
 				.tokenUri("https://api.twitter.com/oauth/access_token")
 				.redirectUri("http://localhost:8080/auth/twitter/callback")
